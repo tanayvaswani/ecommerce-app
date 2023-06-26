@@ -1,3 +1,5 @@
+Work is still in progress, this is my personal project. Feel free to suggest me any changes or contribute directly to this project!
+
 ## Setting up the project in your local environment
 
 ### Tech Stack used
