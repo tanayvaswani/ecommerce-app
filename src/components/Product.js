@@ -1,6 +1,6 @@
 export default function Product({ name, price, description, pictures }) {
   return (
-    <div className="w-64 p-2">
+    <div className="w-64">
       <div className="bg-blue-100 p-5 rounded-xl">
         <img src={pictures} alt="" />
       </div>
