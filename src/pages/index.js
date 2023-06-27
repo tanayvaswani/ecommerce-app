@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Product from "../components/Product";
 import { initMongoose } from "../../lib/mongoose";
 import { getAllProducts } from "./api/products";
+import Footer from "@/components/Footer";
+import Layout from "@/components/Layout";
 
 export default function Home({products}) {
   const [phrase, setPhrase] = useState("");
@@ -17,7 +19,7 @@ export default function Home({products}) {
   }
 
   return (
-    <div className="p-5">
+    <Layout>
       <input
         value={phrase}
         onChange={(e) => setPhrase(e.target.value)}
@@ -45,7 +47,7 @@ export default function Home({products}) {
           </div>
         ))}
       </div>
-    </div>
+    </Layout>
   );
 }
 
