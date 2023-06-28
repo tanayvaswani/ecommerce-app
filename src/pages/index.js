@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Product from "../components/Product";
 import { initMongoose } from "../../lib/mongoose";
 import { getAllProducts } from "./api/products";
-import Footer from "@/components/Footer";
 import Layout from "@/components/Layout";
 
 export default function Home({products}) {
